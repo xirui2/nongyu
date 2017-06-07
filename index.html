@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+  $("#bu").click(function(){
+    $("i").remove();
+  });
+});
+	
+$(document).ready(function(){
+  
+  $("#btn2").click(function(){
+    $("img").after("<i>之后</i>");
+  });
+});
+</script>
+</head>
+
+<body>
+<img src="https://img0.bdstatic.com/static/searchdetail/img/logo-2X_b99594a.png" >
+
+<br><br>
+
+<button id="bu">移除</button>
+<button id="btn2">之后插入</button>
+</body>
+</html>
